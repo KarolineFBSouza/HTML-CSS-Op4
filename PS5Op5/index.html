@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de PS5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/ps4.png" class="logo" alt="">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Controles de jogos</a></li>
+                    <li><a href="">VR Acessorios</a></li>
+                    <li><a href="">Midia Remotas</a></li>
+                    <li><a href="">Outros</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PS5<br> Dualshock 4</h2>
+                <h3>Controle sem fio para PlayStation 5</h3>
+                <p>(Compativel/Generico)</p>
+                <h4>R$32,50</h4>
+                <button type="button">Compre Agora!</img src="img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controle.webp" class="controle" alt="">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.webp" alt="">
+                    <p><small>Adicione ao carrinho</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="img/face.png" alt="">
+            <img src="img/insta.png" alt="">
+            <img src="img/twitter.png" alt="">
+        </div>
+
+    </div>
+
+    <script>
+        
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px"
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
